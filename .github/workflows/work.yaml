@@ -23,6 +23,8 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
+            - name: print key
+              run: echo $PUSH_KEY
             - name: Checkout codes
               uses: actions/checkout@v2
               
